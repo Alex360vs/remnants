@@ -1,0 +1,12 @@
+<ng-container *ngTemplateOutlet="plantilla1">
+
+<ng-container matColumnDef="image">
+  <mat-header-cell *matHeaderCellDef>Image</mat-header-cell>
+  <mat-cell *matCellDef="let element"><img [src]="element.imageSrc" alt="{{element.name}}"></mat-cell>
+</ng-container>
+
+<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+<mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+
+</ng-container>
