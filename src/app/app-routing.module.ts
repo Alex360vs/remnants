@@ -6,7 +6,7 @@ import { TablComponent } from './tabl/tabl.component';
 
 const routes: Routes = [
   { path: '', component: TablComponent },
-  { path: 'filtro', component: FiltroComponent }
+  { path: 'filtro/:id', component: FiltroComponent }
 ];
 
 @NgModule({

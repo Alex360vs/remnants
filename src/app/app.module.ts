@@ -10,7 +10,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { FiltroComponent } from './filtro/filtro.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatListModule} from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatTableModule,
     MatPaginatorModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

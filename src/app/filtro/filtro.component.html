@@ -1,1 +1,97 @@
-<h1>holaaaa</h1>
+
+<div class="container">
+
+   
+
+   
+    
+    <mat-card class="example-card"> 
+      <div class="name">
+        <h2 class="border-t-2 " style="font-family: 'Caveat', cursive;">Details</h2>
+      </div>
+      <div class="details">
+        <div class="detail-item" style="">
+          <span style="color: #5E615D; padding-right: 40px;">Price:</span>
+          <span>{{ remnant.price }}</span>
+        </div>
+      </div>
+      
+
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D; padding-right: 40px;">Width:</span>
+          <span>{{ remnant.width }}</span>
+        </div>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D; padding-right: 40px;">Height:</span>
+          <span>{{ remnant.height }}</span>
+        </div>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D; padding-right: 30px;">Tickness:</span>
+          <span> {{ remnant.tickness }}</span>
+        </div>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <span  [ngStyle]="getStatusStyle(remnant.status)">Status: {{ remnant.status }}</span>
+        </div>
+      </div>
+    </mat-card>
+
+
+    <mat-card class="example-card"> 
+      <div class="name">
+        <h2 class="border-t-2 " style="font-family: 'Caveat', cursive; ">Jobs</h2>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D; padding-right: 30px;">Name:</span>
+          <span > Jobsname</span>
+        </div>
+      </div>
+     
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D; padding-right: 30px;">Price:</span>
+          <span> {{ remnant.price }}</span>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D; padding-right: 30px;">Total:</span>
+          <span style="padding-left: 30px;"> {{ remnant.height }}</span>
+        </div>
+      </div>
+      
+      <div class="details">
+        <div class="detail-item">
+          <span style="color: #5E615D;">Description:</span>
+          <span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, autem quam placeat 
+            molestiae labore possimus dolorem suscipit</span>
+        </div>
+      </div>
+      <div class="details">
+        <div class="detail-item">
+          <span  [ngStyle]="getStatusStyle1(remnant.statusjob)">Status: {{ remnant.statusjob }}</span>
+        </div>
+      </div>
+    </mat-card>
+
+    <div class="content">
+
+      <div class="image">
+        <img class="w-12/12" src="{{ remnant.image }}" alt="{{ remnant.image }}">
+      </div>
+      <div class="overlay">
+        <h1>{{ remnant.price }}</h1>
+      </div>
+    </div>
+
+
+</div>
+  
